@@ -42,7 +42,7 @@
         <image class="icon-box-img" src="../../image/list1.jpg"></image>
       </view>
       <view class="icon-box-ctn">
-        <view class="icon-box-title">多选控件图标_未选择5555555</view>
+        <view class="icon-box-title">多选控件图标_未选择</view>
         <view class="icon-box-desc">用于多选控件中，表示该项目可被选择，但还未选择</view>
         <progress percent="20" show-info active/>
       </view>
