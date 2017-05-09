@@ -37,8 +37,8 @@
     </view>
   </view>
   <view class="">
-    <view class="icon-box" wx:for="{{listArray}}">
-      <navigator url="../../pages/navigate/navigate?id={{item.id}}&&newPrice={{item.newPrice}}&&oldPrice={{item.oldPrice}}">
+    <view class="icon-box" wx:for="{{listArray}}" wx:key="id">
+      <navigator url="../../pages/navigate/navigate?id={{item.id}}&newPrice={{item.newPrice}}&oldPrice={{item.oldPrice}}">
         <view class="icon-small-wrp">
           <image class="icon-box-img" src="{{item.imgSrc}}"></image>
         </view>

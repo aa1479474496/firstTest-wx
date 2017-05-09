@@ -1,5 +1,5 @@
 // pages/navigate/navigate.js
-var url = require('./../../requests/types')
+var url = require('./../../config')
 Page({
   data: {
     goodsId: '',
@@ -16,7 +16,7 @@ Page({
       oldPrice: option.oldPrice
     });
     wx.request({
-      url: url['DETAIL'] + '?goodsId=' + option.id,
+      url: url.detail + '?goodsId=' + option.id,
       success: function (res) {
         self.setData({
           detailImgSrc : res.data

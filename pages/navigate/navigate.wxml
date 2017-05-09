@@ -3,7 +3,7 @@
   <view>商品现价:{{newPrice}}</view>
   <view>商品原价:{{oldPrice}}</view>
   <swiper indicator-dots circular>
-      <swiper-item wx:for="{{detailImgSrc}}">
+      <swiper-item wx:for="{{detailImgSrc}}" wx:key="*this">
         <image src="{{item}}" class="slide-image" width="355" height="150" />
       </swiper-item>
       

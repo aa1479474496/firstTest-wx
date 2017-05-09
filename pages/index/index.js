@@ -1,6 +1,6 @@
 //index.js
 //获取应用实例
-var url = require('./../../requests/types')
+var url = require('./../../config')
 var app = getApp()
 Page({
   data: {
@@ -11,7 +11,7 @@ Page({
   onReady() {
     var self = this;
     wx.request({
-      url: url['INDEX'],
+      url: url.index,
       success: function (res) {
         self.setData({
           listArray: res.data
