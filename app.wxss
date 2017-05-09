@@ -7,8 +7,24 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
+}
+
+.f28 {
+  font-size: 28rpx;
 } 
 .mt6 {
   margin-top: 6px;
 }
+
+.cold64f6f {
+  color: #d64f6f;
+}
+/*.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}*/
+
 

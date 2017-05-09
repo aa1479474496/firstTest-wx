@@ -1,0 +1,11 @@
+<view class="classname">
+  <view>商品id:{{goodsId}}</view>
+  <view>商品现价:{{newPrice}}</view>
+  <view>商品原价:{{oldPrice}}</view>
+  <swiper indicator-dots circular>
+      <swiper-item wx:for="{{detailImgSrc}}">
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+      
+  </swiper>
+</view>

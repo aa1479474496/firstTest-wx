@@ -32,20 +32,78 @@
       <view class="mt6">物流查询</view>
     </view>
     <view class="flex-nav-item">
-     <image class="index-icon" src="../../image/setting.png"></image>
+      <image class="index-icon" src="../../image/setting.png"></image>
       <view class="mt6">商品分类</view>
     </view>
   </view>
   <view class="">
+    <view class="icon-box" wx:for="{{listArray}}">
+      <navigator url="../../pages/navigate/navigate?id={{item.id}}&&newPrice={{item.newPrice}}&&oldPrice={{item.oldPrice}}">
+        <view class="icon-small-wrp">
+          <image class="icon-box-img" src="{{item.imgSrc}}"></image>
+        </view>
+        <view class="icon-box-ctn">
+          <view class="icon-box-title">{{item.title}}</view>
+          <view class="icon-box-desc">
+            <text class="new-price">¥{{item.newPrice}}</text>
+            <text class="old-price">¥{{item.oldPrice}}</text>
+          </view>
+          <view class="saled clearfix">
+            <progress percent="{{item.percent}}" show-info active activeColor="#dc7473" backgroundColor="#eaefe9" />
+          </view>
+          <button class="buy-btn">立即抢购</button>
+        </view>
+      </navigator>
+    </view>
+
+    <!--<view class="icon-box">
+      <view class="icon-small-wrp">
+        <image class="icon-box-img" src="../../image/list2.jpg"></image>
+      </view>
+      <view class="icon-box-ctn">
+        <view class="icon-box-title">【京东自营】 【上衣+下衣+送拖鞋】 乐希源 亚麻套装</view>
+        <view class="icon-box-desc">
+          <text class="new-price">¥69.00</text>
+          <text class="old-price">¥399.00</text>
+        </view>
+        <view class="saled clearfix">
+          <progress percent="48" show-info active activeColor="#dc7473" backgroundColor="#eaefe9" />
+        </view>
+        <button class="buy-btn">立即抢购</button>
+      </view>
+    </view>-->
+
+    <!--<view class="icon-box">
+      <view class="icon-small-wrp">
+        <image class="icon-box-img" src="../../image/list3.jpg"></image>
+      </view>
+      <view class="icon-box-ctn">
+        <view class="icon-box-title">【京东自营】 【上衣+下衣+送拖鞋】 乐希源 亚麻套装</view>
+        <view class="icon-box-desc">
+          <text class="new-price">¥69.00</text>
+          <text class="old-price">¥399.00</text>
+        </view>
+        <view class="saled clearfix">
+          <progress percent="48" show-info active activeColor="#dc7473" backgroundColor="#eaefe9" />
+        </view>
+        <button class="buy-btn">立即抢购</button>
+      </view>
+    </view>
     <view class="icon-box">
       <view class="icon-small-wrp">
         <image class="icon-box-img" src="../../image/list1.jpg"></image>
       </view>
       <view class="icon-box-ctn">
-        <view class="icon-box-title">多选控件图标_未选择</view>
-        <view class="icon-box-desc">用于多选控件中，表示该项目可被选择，但还未选择</view>
-        <progress percent="20" show-info active/>
+        <view class="icon-box-title">【京东自营】 【上衣+下衣+送拖鞋】 乐希源 亚麻套装</view>
+        <view class="icon-box-desc">
+          <text class="new-price">¥69.00</text>
+          <text class="old-price">¥399.00</text>
+        </view>
+        <view class="saled clearfix">
+          <progress percent="48" show-info active activeColor="#dc7473" backgroundColor="#eaefe9" />
+        </view>
+        <button class="buy-btn">立即抢购</button>
       </view>
-    </view>
+    </view>-->
   </view>
 </view>

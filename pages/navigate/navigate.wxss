@@ -1,0 +1,6 @@
+/* pages/navigate/navigate.wxss */
+.slide-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

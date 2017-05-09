@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/personal/personal",
     "pages/shopping/shopping",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/navigate/navigate"
   ],
   "window":{
     "backgroundTextStyle":"light",

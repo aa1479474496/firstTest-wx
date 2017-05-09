@@ -5,13 +5,17 @@ var app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {}
+    userInfo: {},
+    listArray: []
   },
   onReady() {
+    var self = this;
     wx.request({
       url: url['INDEX'],
       success: function (res) {
-        console.log(res)
+        self.setData({
+          listArray: res.data
+        })
       }
     })
   },
